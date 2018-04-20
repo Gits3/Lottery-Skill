@@ -34,9 +34,17 @@ class LotterySkill(MycroftSkill):
                  
                  random_number_intent = IntentBuilder("LotteryIntent").\ 
                          require("LotteryKeyword").build()
-                 self.register_intent(numbers_intent, self.handle_numbers_intent)
+                 self.register_intent(random_number_intent, self.handle_random_number_intent)
        
        
                def handle_numbers_intent(self, message):
                        self.speak_dialog("numbers")
                        num = random.randint(1,45)
+                       self.speak_dialog("Lottery")
+		                     self.speak(str(num))
+                        
+               def stop(self):
+		                      pass
+
+def create_skill():
+       	return LotterySkill()
