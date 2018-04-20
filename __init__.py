@@ -33,7 +33,7 @@ class LotterySkill(MycroftSkill):
                  self.load_data_files(dirname(__file__))
                  
                  random_number_intent = IntentBuilder("LotteryIntent").\ 
-                         require("NumbersKeyword").build()
+                         require("LotteryKeyword").build()
                  self.register_intent(numbers_intent, self.handle_numbers_intent)
        
        
