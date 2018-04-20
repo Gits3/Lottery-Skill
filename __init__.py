@@ -22,3 +22,21 @@ from mycroft.skills.core import MycroftSkill
 from mycroft.util.log import getLogger
 __author__ = 'J'
  
+LOGGER= getLogger(__name__)
+
+class LotterySkill(MycroftSkill):
+ 
+ def__init__(self):
+              super(LotterySkill, self).__init__(name="LotterySkill")
+   
+ def initialize(self):
+                 self.load_data_files(dirname(__file__))
+                 
+                 random_number_intent = IntentBuilder("LotteryIntent").\ 
+                         require("NumbersKeyword").build()
+                 self.register_intent(numbers_intent, self.handle_numbers_intent)
+       
+       
+               def handle_numbers_intent(self, message):
+                       self.speak_dialog("numbers")
+                       num = random.randint(1,45)
