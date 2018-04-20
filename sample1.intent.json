@@ -1,0 +1,7 @@
+{
+  "utterance": "Pick the balls",
+  "intent_type": "RandomNumberIntent",
+  "intent": {
+    "RandomNumberKeyword": "pick a number"
+  }
+}
