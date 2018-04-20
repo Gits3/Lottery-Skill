@@ -1,7 +1,0 @@
-{
-  "utterance": "Whats the winning Numbers",
-  "intent_type": "LotterySkillIntent",
-  "intent": {
-    "NumberKeyword": "Lottery numbers"
-  }
-}
