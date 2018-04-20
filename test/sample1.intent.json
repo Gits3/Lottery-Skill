@@ -1,7 +1,7 @@
 {
-  "utterance": "Pick a Number",
+  "utterance": "Whats the winning Numbers",
   "intent_type": "LotterySkillIntent",
   "intent": {
-    "RandomNumberKeyword": "pick a number"
+    "NumberKeyword": "pick a number"
   }
 }
