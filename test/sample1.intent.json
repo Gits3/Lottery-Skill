@@ -2,6 +2,6 @@
   "utterance": "Whats the winning Numbers",
   "intent_type": "LotterySkillIntent",
   "intent": {
-    "NumberKeyword": "pick the numbers"
+    "NumberKeyword": "Lottery numbers"
   }
 }
